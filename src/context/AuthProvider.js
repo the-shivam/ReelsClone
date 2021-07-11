@@ -41,5 +41,6 @@ function AuthProvider({ children }) {
         </AuthContext.Provider>
     )
 }
+// {!loading ? children : <></>} it can also be written like this
 
 export default AuthProvider
