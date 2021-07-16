@@ -49,9 +49,10 @@ function Signup() {
                     profileUrl: downloadUrl,
                     postIds: []
                 })
+                setLoading(false);
                 console.log("user has signed Up");
             }
-            setLoading(false);
+
         } catch (err) {
             setError(err);
             setTimeout(() => {
