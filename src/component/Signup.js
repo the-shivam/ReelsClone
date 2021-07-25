@@ -98,6 +98,10 @@ function Signup() {
         }
     }
 
+    const handleSignInClick = () => {
+        history.push('/login');
+    }
+
     useEffect(() => {
         if (currentUser) {
             history.push('/');
@@ -139,6 +143,7 @@ function Signup() {
                 <Button type='submit' disabled={loading} size="small" variant="contained" className={classes.button}>
                     Sign Up
                 </Button>
+                <div >Already have an account?<Button onClick={handleSignInClick} style={{ display: 'inline-block', color: '#0957c3' }}>Sign In</Button></div>
             </form>
         </div>
     )

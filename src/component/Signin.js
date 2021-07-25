@@ -51,6 +51,10 @@ function Signin() {
         }
     }
 
+    const handleSignUpClick = () => {
+        history.push('/signup');
+    }
+
     useEffect(() => {
         if (currentUser) {
             history.push('/')
@@ -69,6 +73,7 @@ function Signin() {
                     <TextField id="password" label="password" type='password' value={password} onChange={(e) => setPassword(e.target.value)} required />
                 </div>
                 <Button size="small" variant="contained" className={classes.button} type='submit' disabled={loading}>Sign in</Button>
+                <div >Don't have account?<Button onClick={handleSignUpClick} style={{ display: 'inline-block', color: '#0957c3' }}>Sign up!</Button></div>
                 {
                     error ? <h1>{error}</h1> : <></>
                 }
