@@ -24,21 +24,21 @@ function UploadFile(props) {
         if (!file) {
             setError("Please select a file");
             setTimeout(() => {
-                setError('')
+                setError(null)
             }, 3000);
             return;
         }
         if (types.indexOf(file.type) == -1) {
             setError("Please select a video file");
             setTimeout(() => {
-                setError('')
+                setError(null)
             }, 3000);
             return;
         }
         if (file.size / (1024 * 1024) > 100) {
             setError("Please select a smaller file");
             setTimeout(() => {
-                setError('')
+                setError(null)
             }, 3000);
             return;
         }
@@ -54,7 +54,7 @@ function UploadFile(props) {
         function fn2(error) {
             setError(error);
             setTimeout(() => {
-                setError('');
+                setError(null);
             }, 2000);
             setLoading(false);
         }
@@ -83,7 +83,7 @@ function UploadFile(props) {
                 }).catch((e) => {
                     setError(e);
                     setTimeout(() => {
-                        setError('');
+                        setError(null);
                     }, 3000);
                     setLoading(false);
                 })

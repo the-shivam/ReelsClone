@@ -6,7 +6,7 @@
 {
     height: 80vh;
     width: 35vw;
-
+    
 }
 .videos{
     position: relative;
@@ -62,7 +62,7 @@
 }
 
 .video-container {
-
+    
     height: 80vh;
     border-radius: 20px;
     background-color: white;
@@ -70,7 +70,7 @@
     scroll-snap-type: y mandatory;
     scrollbar-width: none;
   }
-
+  
   /* for chrome and opera */
   .video-container::-webkit-scrollbar {
     display: none;
@@ -107,6 +107,7 @@
 }
 
 
+
 @media only screen and (max-width: 720px) {
     .video-part{
         display: none;
@@ -136,7 +137,7 @@
         width: 100%;
     }
     .video-style{
-        /* height: 70vh; */
+        height: 70vh;
     }
     .insta-head2 img {
         width: 100%;
