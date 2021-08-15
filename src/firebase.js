@@ -5,12 +5,7 @@ import "firebase/firestore"
 
 firebase.initializeApp(
     {
-        apiKey: "AIzaSyDIbI3bj_YRlJrB2KcDnVuCMdGh4OIlHhI",
-        authDomain: "reels-5d4cc.firebaseapp.com",
-        projectId: "reels-5d4cc",
-        storageBucket: "reels-5d4cc.appspot.com",
-        messagingSenderId: "343916608465",
-        appId: "1:343916608465:web:760f63fff5619464c13ef0"
+        
     }
 )
 
